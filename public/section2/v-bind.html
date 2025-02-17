@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js CDN with Apache on Docker</title>
+</head>
+
+<body>
+    <h2>v-ifのテンプレート</h2>
+
+    <div id="v_bind_practice">
+        <p v-if="toggle">Hello</p>
+
+        <ol>
+            <li v-for="color in colors">{{ color }}</li>
+        </ol>
+
+        <ul>
+            <li v-for="(value, key) in user">{{ key }}:{{ value }}</li>
+        </ul>
+
+        <button v-on:click="onClick">Click!</button>
+        <p>{{ now }}</p>
+
+        <p><input type="text" v-model="message" /></p>
+        <p><input type="text" v-model="message" /></p>
+
+        <pre>{{ $data }}</pre>
+    </div>
+
+    <!-- Vue.js CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/section2/v-bind.js"></script>
+</body>
+</html>
