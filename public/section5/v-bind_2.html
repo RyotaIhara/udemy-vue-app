@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js CDN with Apache on Docker</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="v_bind_practice" v-cloak>
+        <p v-once>{{ message }}</p>
+        <p v-html="message"></p>
+        <button v-on:click="clickHandler">
+            Click!
+        </button>
+    </div>
+
+    <!-- Vue.js CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/v-bind_2.js"></script>
+</body>
+</html>
